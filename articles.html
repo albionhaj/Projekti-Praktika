@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+   .butoni{
+    background-color: darkblue; 
+    color: white; 
+    padding: 2px 6px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border: 2px solid #fff;  
+   border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.butoni:hover {
+    background-color: rgb(14, 130, 168);
+    border-color: #ddd; 
+    }
+</style>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white p-4 border-1 border-b-2 border-l-0 border-r-0 border-t-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="astrazeneca.png" alt="Logo" class="h-12" id="logo" />
+                <h1 class="text-xl font-bold text-white">Spech</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="articles.html" class="hover:underline">Articles</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex p-4">
+        <section class="flex-1 mr-4">
+            <article class="bg-white p-4 rounded shadow mb-4">
+                <h2 class="text-xl font-bold">The Rise of Artificial Intelligence in Everyday Life</h2>
+                <p class="text-gray-600">Published on: October 19, 2024</p>
+                <img src="web.png" alt="Thumbnail for Article 1" class="w-full h-48 object-cover rounded mt-2">
+                <p class="mt-2">The rise of artificial intelligence (AI) is transforming various aspects of everyday life, making tasks more efficient and enhancing the way we interact with technology. From smart assistants to personalized recommendations, AI is becoming an integral part of our daily routines.</p>
+                <a href="https://chatgpt.com/" class="text-blue-500 hover:underline mt-2 block"><button class="butoni">Read More</button></a>
+            </article>
+            <article class="bg-white p-4 rounded shadow mb-4">
+                <h2 class="text-xl font-bold">The Future of Web Development: Trends to Watch</h2>
+                <p class="text-gray-600">Published on: October 19, 2024</p>
+                <img src="life1.webp" alt="Thumbnail for Article 2" class="w-full h-48 object-cover rounded mt-2">
+                <p class="mt-2">Web development is an ever-evolving field, influenced by emerging technologies, user expectations, and design trends. </p>
+                <a href="https://www.linkedin.com/pulse/future-web-development-emerging-technologies-trends-latoishanai-jeter#:~:text=The%20world%20of%20web%20development%20is%20constantly%20evolving%2C,to%20create%20more%20immersive%20and%20engaging%20digital%20experiences." class="text-blue-500 hover:underline mt-2 block"><button class="butoni">Read More</button></a>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+
+        <aside class="w-1/3 bg-white p-4 rounded shadow">
+            <h3 class="font-bold mb-2">Recent Articles</h3>
+            <ul class="space-y-2">
+                <li><a href="https://www.mckinsey.com/featured-insights/the-rise-of-quantum-computing" class="text-blue-500 hover:underline">The Rise of Quantum Computing</a></li>
+                <li><a href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment" class="text-blue-500 hover:underline">DevOps and Continuous Integration/Continuous Deployment (CI/CD)</a></li>
+                <li><a href="https://www.dell.com/en-us/dt/industry/telecom/index.htm?gacd=9650523-1147-5763017-266683695-0&dgc=ST&SA360CID=71700000083561651&gclid=fed558bba53817875dde3fa45262348e&gclsrc=3p.ds&msclkid=fed558bba53817875dde3fa45262348e#tab0=0" class="text-blue-500 hover:underline">The Impact of 5G on Technology and Innovation</a></li>
+            </ul>
+            <h3 class="font-bold mt-4 mb-2">Popular Tags</h3>
+            <ul class="space-y-2">
+                <li><a href="https://www.sap.com/products/artificial-intelligence.html?campaigncode=crm-ya24-int-2331893&source=ppc-1na-bing-search-662612783-1238051154892636-sapmidmarket_sapmidmarket-x-x-x&dfa=1&gclid=a26c1cb73df4107604e27ba8ca5d86fe&gclsrc=3p.ds&msclkid=a26c1cb73df4107604e27ba8ca5d86fe" class="text-blue-500 hover:underline">Machine Learning and AI in Everyday Applications: </a></li>
+                <li><a href="https://www.sans.org/blog/what-is-cyber-security-protecting-our-digital-tomorrow/" class="text-blue-500 hover:underline">Cybersecurity in a Digital World</a></li>
+                <li><a href="https://digitalcommons.lib.uconn.edu/libr_pubs/7/#:~:text=In%20the%2030%20years%20from%201970-2000%2C%20open%20source,stable%20and%20widely%20used%20software%20packages%20ever%20produced." class="text-blue-500 hover:underline">The Evolution of Open Source Software</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="bg-blue-900 text-white text-center p-4 mt-4">
+        <p>&copy; 2024 Your Blog Name. All rights reserved.</p>
+        <div class="mt-2">
+            <a href="#" class="hover:text-gray-300 mx-2">Facebook</a>
+            <a href="#" class="hover:text-gray-300 mx-2">Twitter</a>
+            <a href="#" class="hover:text-gray-300 mx-2">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

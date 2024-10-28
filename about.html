@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    .butoni{
+    background-color: darkblue; 
+    color: white; 
+    padding: 2px 6px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border: 2px solid #fff;  
+   border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.butoni:hover {
+    background-color: rgb(14, 130, 168);
+    border-color: #ddd; 
+    }
+#photo{
+    padding-top: 20px;
+
+}
+</style>
+<body>
+    <body class="bg-gray-100">
+
+        <!-- Header -->
+        <header class="bg-blue-900 text-white p-4 border-1 border-b-2 border-l-0 border-r-0 border-t-0">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="astrazeneca.png" alt="Logo" class="h-12" id="logo" />
+                    <h1 class="text-xl font-bold text-white">Spech</h1>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="articles.html" class="hover:underline">Articles</a></li>
+                        <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold mb-4">About Us</h1>
+            <p class="mb-4 text-gray-700">
+                Welcome to Spech, where we are dedicated to exploring the fascinating world of technology. Our mission is to provide insightful articles, resources, and discussions about the latest advancements in the tech industry.
+            </p>
+        
+            <h2 class="text-2xl font-semibold mb-2">Our Vision</h2>
+            <p class="mb-4 text-gray-700">
+                At Spech, we envision a world where technology enhances everyday life, making it easier, smarter, and more connected.
+            </p>
+        
+            <h2 class="text-2xl font-semibold mb-2">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="team-member1.jpg" alt="Team Member 1" class="h-48 w-full object-contain rounded-t mb-2">
+                    <h3 class="text-xl font-semibold">Alice Johnson</h3>
+                    <p class="text-gray-600">Editor-in-Chief</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="team-member2.jpg" alt="Team Member 2" class="h-48 w-full object-contain rounded-t mb-2">
+                    <h3 class="text-xl font-semibold">Bob Smith</h3>
+                    <p class="text-gray-600">Lead Developer</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="team-member3.jpg" alt="Team Member 3" class="h-48 w-full object-contain rounded-t mb-2">
+                    <h3 class="text-xl font-semibold">Charlie Brown</h3>
+                    <p class="text-gray-600">Content Writer</p>
+                </div>
+            </div>
+            
+            
+                
+
+                <!-- Add more team members as needed -->
+            </div>
+        
+            <h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+            <p class="mb-4 text-gray-700">
+                If you have any questions or inquiries, feel free to reach out to us.
+            </p>
+            <form class="bg-white p-4 rounded shadow">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="border rounded w-full p-2" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="border rounded w-full p-2" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="border rounded w-full p-2" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="butoni">Send Message</button>
+            </form>
+        </main>
+        
+        
+        <footer class="bg-blue-900 text-white text-center p-4 mt-4">
+            <p>&copy; 2024 Your Blog Name. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="hover:text-gray-300 mx-2">Facebook</a>
+                <a href="#" class="hover:text-gray-300 mx-2">Twitter</a>
+                <a href="#" class="hover:text-gray-300 mx-2">Instagram</a>
+            </div>
+        </footer>
+</body>
+</html>
